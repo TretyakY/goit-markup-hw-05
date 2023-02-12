@@ -22,7 +22,7 @@
   </head>
   <body>
     <!--Header section-->
-    <header class="header">
+    <header class="header" data-header>
       <div class="header-container container">
         <a class="header-logo link" href="./index.html">
           <span class="logo">Web</span>Studio
@@ -30,7 +30,7 @@
         <nav class="nav">
           <ul class="nav-list list">
             <li class="nav-item">
-              <a class="nav-link link" href="./index.html">Studio</a>
+              <a class="nav-link current link" href="./index.html">Studio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link link" href="./portfolio.html">Portfolio</a>
@@ -549,5 +549,19 @@
         </div>
       </div>
     </footer>
+
+    <!-- Modal window 2-->
+    <div class="backdrop" data-modal>
+      <div class="modal">
+        <button class="modal-btn" type="button" data-modal-close>
+          <svg class="modal-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-cross"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/header.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
