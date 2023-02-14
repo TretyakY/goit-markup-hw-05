@@ -62,6 +62,9 @@ img {
   text-decoration: none;
 }
 /* reset none*/
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin:0;
@@ -628,13 +631,13 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
   transition: opacity var(--trns-fast), visibility var(--trns-fast);
 }
 
-/* .backdrop.is-hidden {
+.backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
 
-  transition-delay: 250ms;
-} */
+  transition-delay: 150ms;
+}
 
 .modal {
   position: absolute;
@@ -681,8 +684,13 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 }
 
 
-/* {
 .modal-btn:hover, 
-.modal-btn:focus {}
-  background-color:#404BBF;
-  } */
+.modal-btn:focus {
+  background-color:#404BBF; 
+  border:#404BBF;
+  } 
+
+  .modal-icon:hover,
+  .modal-icon:focus {
+    fill: var(--wht-cl);
+  }
