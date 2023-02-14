@@ -30,8 +30,7 @@
   --items-4: 4;
   --border-radius: 4px;
 
-  --trns-fast: 250ms ease-in;
-  /* --trns-slow: 1800ms ease-in-out; Not */
+  --trns-fast: 250ms;
   --cubic-bezier: (0.4, 0, 0.2, 1);
 }
 
@@ -134,12 +133,16 @@ body {
 
   background-color: var(--contrast-bg-cl);
   color: var(--wht-cl);
+  transition-duration: var(--trns-fast);
+  transition-timing-function: var(--cubic-bezier);
 }
 .btn-hero:hover,
 .btn-hero:focus{
  background-color: var(--deep-bg-cl);
  color: var(--wht-cl);
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+
 }
 
 .btn-portfolio {
@@ -154,6 +157,9 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
  color: var(--accent-txt-cl);
  background-color: var(--secondary-bg-cl);
+
+  transition-duration: var(--trns-fast);
+  transition-timing-function: var(--cubic-bezier);
 }
 
 .btn-portfolio:hover,
@@ -243,6 +249,9 @@ border-bottom: 1px solid var(--light-line-cl);
   padding-bottom: 24px;
   font-weight: 500;
   color: var(--secondary-txt-cl); 
+
+    transition-duration: var(--trns-fast);
+    transition-timing-function: var(--cubic-bezier);
 }
 
 .nav-link:hover,
@@ -436,6 +445,9 @@ margin-left: auto;
 
   background-color: var(--contrast-bg-cl);
   border-radius: 50%;
+
+  transition-duration: var(--trns-fast);
+  transition-timing-function: var(--cubic-bezier);
   }
 
   .socials-link:hover,
@@ -459,6 +471,9 @@ margin-left: auto;
     justify-content: center;
     align-items: center;
     color: #8E8F99;
+
+    transition-duration: var(--trns-fast);
+    transition-timing-function: var(--cubic-bezier);
 }
 
 .icon-logos-cl:hover,
@@ -468,6 +483,9 @@ margin-left: auto;
 }
 .logos-svg {
   fill: currentColor;
+
+  transition-duration: var(--trns-fast);
+  transition-timing-function: var(--cubic-bezier);
 }
 .logos-svg:hover,
 .logos-svg:focus
@@ -530,6 +548,9 @@ margin-left: auto;
     height: 40px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
+
+    transition-duration: var(--trns-fast);
+    transition-timing-function: var(--cubic-bezier);
    }
 
 .socials-link-footer:hover, socials-link-footer:focus {
@@ -585,6 +606,8 @@ margin-left: auto;
 
 .portfolio-link {
   display: block;
+  transition-duration: var(--trns-fast);
+  transition-timing-function: var(--cubic-bezier);
 }
 
 .portfolio-link:hover,
@@ -656,7 +679,9 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
   padding: 0;
   border: 1px solid rgba(0, 0, 0, 0.1);;
   border-radius: 50%;
-  background-color: var(--light-line-cl);
+  
+  transition-duration: var(--trns-fast);
+  transition-timing-function: var(--cubic-bezier);
 }
 
 .modal-icon {
