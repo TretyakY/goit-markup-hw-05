@@ -30,8 +30,8 @@
   --items-4: 4;
   --border-radius: 4px;
 
-  --trns-fast: 250ms;
-  --cubic-bezier: (0.4, 0, 0.2, 1);
+  --trns-fast: 250ms ease-in-out;
+
 }
 
 /* reset style*/
@@ -133,16 +133,14 @@ body {
 
   background-color: var(--contrast-bg-cl);
   color: var(--wht-cl);
-  transition-duration: var(--trns-fast);
-  transition-timing-function: var(--cubic-bezier);
+
+  transition: bacground-color var(--trns-fast), color var(--trns-fast), box-shadow var (--trns-fast);
 }
 .btn-hero:hover,
 .btn-hero:focus{
  background-color: var(--deep-bg-cl);
  color: var(--wht-cl);
- box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
-
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .btn-portfolio {
@@ -158,8 +156,7 @@ body {
  color: var(--accent-txt-cl);
  background-color: var(--secondary-bg-cl);
 
-  transition-duration: var(--trns-fast);
-  transition-timing-function: var(--cubic-bezier);
+transition: bacground-color var(--trns-fast), color var(--trns-fast), box-shadow var(--trns-fast);
 }
 
 .btn-portfolio:hover,
@@ -250,9 +247,7 @@ border-bottom: 1px solid var(--light-line-cl);
   font-weight: 500;
   color: var(--secondary-txt-cl); 
 
-    transition-duration: var(--trns-fast);
-    transition-timing-function: var(--cubic-bezier);
-}
+  transition: color var(--trns-fast);}
 
 .nav-link:hover,
 .nav-link:focus,
@@ -290,6 +285,8 @@ margin-left: auto;
  padding-top: 24px;
  padding-bottom: 24px;
  color: var(--primary-txt-cl);
+
+ transition: color var(--trns-fast);
 }
 
 /* shero-section */
@@ -446,8 +443,7 @@ margin-left: auto;
   background-color: var(--contrast-bg-cl);
   border-radius: 50%;
 
-  transition-duration: var(--trns-fast);
-  transition-timing-function: var(--cubic-bezier);
+  transition: bacground-color var(--trns-fast);
   }
 
   .socials-link:hover,
@@ -472,8 +468,7 @@ margin-left: auto;
     align-items: center;
     color: #8E8F99;
 
-    transition-duration: var(--trns-fast);
-    transition-timing-function: var(--cubic-bezier);
+    transition: bacground-color var(--trns-fast), color var(--trns-fast), box-shadow var(--trns-fast), border var(--trns-fast);
 }
 
 .icon-logos-cl:hover,
@@ -483,9 +478,7 @@ margin-left: auto;
 }
 .logos-svg {
   fill: currentColor;
-
-  transition-duration: var(--trns-fast);
-  transition-timing-function: var(--cubic-bezier);
+  transition: fill var(--trns-fast);
 }
 .logos-svg:hover,
 .logos-svg:focus
@@ -549,11 +542,11 @@ margin-left: auto;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
 
-    transition-duration: var(--trns-fast);
-    transition-timing-function: var(--cubic-bezier);
+    transition: bacground-color var(--trns-fast);
    }
 
-.socials-link-footer:hover, socials-link-footer:focus {
+.socials-link-footer:hover,
+.socials-link-footer:focus {
   background-color: var(--hover-footer-icons);
 }
 
@@ -606,8 +599,8 @@ margin-left: auto;
 
 .portfolio-link {
   display: block;
-  transition-duration: var(--trns-fast);
-  transition-timing-function: var(--cubic-bezier);
+
+  transition: box-shadow var(--trns-fast);
 }
 
 .portfolio-link:hover,
@@ -654,11 +647,11 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
   background-color: var(--beg-wht-bg);
   border-radius: var(--border-radius);
 
-  box-shadow:box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2); 
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+ }
 
   /* transition: transform 150ms ease, opacity 150ms ease;
   transition-delay: 400ms; */
-}
 
 /* .backdrop.is-hidden .modal {
   transform: translate(-50%, -70%);
@@ -679,13 +672,12 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
   padding: 0;
   border: 1px solid rgba(0, 0, 0, 0.1);;
   border-radius: 50%;
-  
-  transition-duration: var(--trns-fast);
-  transition-timing-function: var(--cubic-bezier);
+  background-color: var(--light-line-cl);
 }
 
 .modal-icon {
   fill: #000000;
+  transition: bacground-color var(--trns-fast), color var(--trns-fast), box-shadow var(--trns-fast), border var(--trns-fast);
 }
 
 
